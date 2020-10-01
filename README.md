@@ -18,8 +18,11 @@ This is how it was tested and ran:
 •	Use a loop in main() to create all those threads. Using previous gained knowledge of joining threads.
 
 •	Wrote one testStack function, and used it as the entry point for each thread. 
+
 •	The testStack function intermixes 3 push operations with 3 pop operations in a loop that 
 executes 500 times. 
+
 •	All threads used the same stack. 
+
 •	gcc -pthread stack-ptr.c -o stack-ptr is an example command to compile and link 
 the program 
