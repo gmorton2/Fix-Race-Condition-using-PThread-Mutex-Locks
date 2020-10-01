@@ -14,7 +14,9 @@ This program had a race condition and was not appropriate for a concurrent envir
 The now-thread-safe stack was tested by creating 200 concurrent threads in main() that intermix pushing and popping values.
 
 This is how it was tested and ran:
+
 •	Use a loop in main() to create all those threads. Using previous gained knowledge of joining threads.
+
 •	Wrote one testStack function, and used it as the entry point for each thread. 
 •	The testStack function intermixes 3 push operations with 3 pop operations in a loop that 
 executes 500 times. 
