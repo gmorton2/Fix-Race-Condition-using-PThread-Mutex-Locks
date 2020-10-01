@@ -3,11 +3,17 @@ The C program stack-ptr.c (provided) contains an implementation of a stack using
 An example of its use is as follows:
 
 StackNode *top = NULL; 
+
 ... 
+
 push(5, &top); 
+
 push(10, &top); push(15, &top); 
+
 ... 
+
 int value = pop(&top); 
+
 value 	= pop(&top); value 	= pop(&top); 
 
 This program had a race condition and was not appropriate for a concurrent environment. Pthreads mutex locks were used to fix the race conditions. 
